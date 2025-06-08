@@ -1,0 +1,62 @@
+/*Reset Global*/
+* {box-sizing: border-box; margin: 0; padding: 0;}
+
+body {
+    font-family: sans-serif;
+    height: 100vh; /*faz o body ocupar 100% da altura da janela.*/
+    overflow: hidden; /*Esconde a rolagem*/
+    background-position: center;
+    background-size: cover;
+    transition: 0.4s;
+}
+
+.slide-container {
+    position: relative; /*permite posicionar os slides dentro dela.*/
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute; /*para sobrepor uns aos outros.*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: -2;
+    transition: opacity 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 100px;
+    display: block;
+    box-shadow: 3px 10px 12px rgba(0, 0, 0, 0.9);
+    border-radius: 55px;
+}
+
+.slider-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /*semitransparente*/
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#left {left: 12vw;}
+
+#right {right: 12vw;}
+
+
