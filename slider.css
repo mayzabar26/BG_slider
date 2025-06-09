@@ -1,6 +1,7 @@
 /*Reset Global*/
 * {box-sizing: border-box; margin: 0; padding: 0;}
 
+/*CORPO DA PÁGINA*/
 body {
     font-family: sans-serif;
     height: 100vh; /*faz o body ocupar 100% da altura da janela.*/
@@ -10,6 +11,8 @@ body {
     transition: 0.4s;
 }
 
+
+/*DENTRO DO BODY TEMOS O SECTION DE CLASSE .slide-container*/
 .slide-container {
     position: relative; /*permite posicionar os slides dentro dela.*/
     width: 100vw;
@@ -17,6 +20,7 @@ body {
     overflow: hidden;
 }
 
+/*CADA FOTO ESTÁ EM UMA DIV DE CLASSE SLIDE*/
 .slide {
     position: absolute; /*para sobrepor uns aos outros.*/
     top: 0;
